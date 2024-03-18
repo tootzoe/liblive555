@@ -3,6 +3,15 @@
 
 
 
+//#if os(tvOS)
+//@_exported import TVVLCKit
+//#elseif os(iOS) && !targetEnvironment(macCatalyst)
+//@_exported import MobileVLCKit
+//#elseif os(macOS)
+//@_exported import VLCKit
+//#endif
+ 
+
 
  // import libtlive555
 @_exported import libtlive555
@@ -16,27 +25,16 @@ public class testMyClz {
         
     }
     
-    func doStartMediaSrv( _ pathname  : String) {
+    public func doStartMediaSrv( _ pathname  : String) {
           startMediaSrv(pathname)
     }
     
-    func doStopMediaSrv() {
+    public func doStopMediaSrv() {
         stopLive555Server()
     }
     
 }
  
-
-//#if os(tvOS)
-//@_exported import TVVLCKit
-//#elseif os(iOS) && !targetEnvironment(macCatalyst)
-//@_exported import MobileVLCKit
-//#elseif os(macOS)
-//@_exported import VLCKit
-//#endif
-
-@_exported import libtlive555
-
 
 
 
