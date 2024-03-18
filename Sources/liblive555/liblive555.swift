@@ -4,12 +4,17 @@
 
 
 
-import libtlive555
+ // import libtlive555
+@_exported import libtlive555
 import mediaSvr
 
  
 
 public class testMyClz {
+    
+    public init(){
+        
+    }
     
     func doStartMediaSrv( _ pathname  : String) {
           startMediaSrv(pathname)
