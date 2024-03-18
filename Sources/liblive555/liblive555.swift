@@ -15,7 +15,7 @@
 
  // import libtlive555
 @_exported import libtlive555
-import mediaSvr
+@_exported import mediaSvr
 
  
 
