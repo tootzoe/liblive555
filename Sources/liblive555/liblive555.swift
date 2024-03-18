@@ -4,22 +4,22 @@
 
 
 
-//import libtlive555
-//import mediaSvr
-//
-// 
-//
-//class testMyClz { 
-//    
-//    func doStartMediaSrv( _ pathname  : String) {
-//          startMediaSrv(pathname)
-//    }
-//    
-//    func doStopMediaSrv() {
-//        stopLive555Server()
-//    }
-//    
-//}
+import libtlive555
+import mediaSvr
+
+ 
+
+public class testMyClz {
+    
+    func doStartMediaSrv( _ pathname  : String) {
+          startMediaSrv(pathname)
+    }
+    
+    func doStopMediaSrv() {
+        stopLive555Server()
+    }
+    
+}
  
 
 //#if os(tvOS)
